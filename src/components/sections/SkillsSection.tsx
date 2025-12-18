@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import { AnimateOnScroll, StaggerContainer, StaggerItem } from '@/components/ui/AnimateOnScroll';
+
 const skillCategories = [
   {
     title: 'Frontend',
@@ -28,7 +31,7 @@ export const SkillsSection = () => {
 
       <div className="container max-w-6xl mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <AnimateOnScroll className="text-center mb-16">
           <span className="inline-block text-sm font-medium text-primary mb-4 tracking-wider uppercase">
             Skills
           </span>
@@ -39,51 +42,58 @@ export const SkillsSection = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Technologies and tools I use to bring ideas to life
           </p>
-        </div>
+        </AnimateOnScroll>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skillCategories.map((category, categoryIndex) => (
-            <div
-              key={category.title}
-              className="group p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300"
-              style={{ animationDelay: `${categoryIndex * 100}ms` }}
-            >
-              <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
-                {category.title}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1.5 text-sm rounded-full bg-secondary/50 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={0.1}>
+          {skillCategories.map((category) => (
+            <StaggerItem key={category.title}>
+              <motion.div
+                whileHover={{ y: -5, transition: { duration: 0.2 } }}
+                className="group h-full p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300"
+              >
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
+                  {category.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <motion.span
+                      key={skill}
+                      whileHover={{ scale: 1.05 }}
+                      className="px-3 py-1.5 text-sm rounded-full bg-secondary/50 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default"
+                    >
+                      {skill}
+                    </motion.span>
+                  ))}
+                </div>
+              </motion.div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
         {/* Soft Skills */}
-        <div className="mt-12 text-center">
+        <AnimateOnScroll delay={0.3} className="mt-12 text-center">
           <h3 className="text-lg font-semibold mb-6 text-muted-foreground">
             Also skilled in
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {['Critical Thinking', 'Agile Methodology', 'Team Collaboration', 'Problem Solving', 'Data-Driven Decisions'].map(
-              (skill) => (
-                <span
+              (skill, index) => (
+                <motion.span
                   key={skill}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.4 + index * 0.05 }}
+                  whileHover={{ scale: 1.05 }}
                   className="px-5 py-2.5 rounded-full border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-foreground transition-all duration-300"
                 >
                   {skill}
-                </span>
+                </motion.span>
               )
             )}
           </div>
-        </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );
