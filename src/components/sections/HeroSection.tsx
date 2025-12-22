@@ -56,7 +56,7 @@ export const HeroSection = () => {
             Hi, I'm{' '}
             <span className="text-gradient">Venkata Sri Hari</span>
             <br />
-            <span className="text-muted-foreground">Frontend Developer</span>
+            <span className="text-muted-foreground">Software Developer</span>
           </motion.h1>
 
           {/* Subheading */}
