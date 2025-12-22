@@ -99,7 +99,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">India</p>
+                    <p className="font-medium">Rajahmundry, Andhra Pradesh, India</p>
                   </div>
                 </motion.div>
               </div>
@@ -112,7 +112,7 @@ export const ContactSection = () => {
                 <div className="flex gap-3">
                   {[
                     { href: 'https://github.com/', icon: Github, label: 'GitHub' },
-                    { href: 'https://linkedin.com/', icon: Linkedin, label: 'LinkedIn' },
+                    { href: 'https://linkedin.com/in/venkatasrihariboyi', icon: Linkedin, label: 'LinkedIn' },
                     { href: 'mailto:boyivenkatasrihari@gmail.com', icon: Mail, label: 'Email' },
                   ].map((social) => (
                     <motion.a

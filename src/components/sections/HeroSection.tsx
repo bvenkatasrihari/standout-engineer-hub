@@ -66,9 +66,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed"
           >
-            Building responsive, accessible, and high-performance web applications 
-            with modern technologies. Focused on creating seamless user experiences 
-            that make a real impact.
+            Recent CS graduate building full-stack applications with Java, Python, React & Django.
+            Turning complex problems into clean, efficient solutions.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -108,7 +107,7 @@ export const HeroSection = () => {
               <Github size={20} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/"
+              href="https://linkedin.com/in/venkatasrihariboyi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-secondary transition-all duration-300"

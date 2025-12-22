@@ -1,36 +1,38 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Shield } from 'lucide-react';
+import { ExternalLink, Github, Shield, Globe, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AnimateOnScroll } from '@/components/ui/AnimateOnScroll';
 
 const projects = [
   {
     title: 'DDoS Attack Detection System',
-    description: 'Semi-supervised ML approach for real-time DDoS detection using network entropy estimation, co-clustering, and Extra-Trees algorithm.',
-    problem: 'Detecting distributed denial-of-service attacks with limited labeled data',
-    impact: 'Achieved high accuracy on benchmark datasets with semi-supervised learning',
-    tech: ['Python', 'Machine Learning', 'Scikit-learn', 'Network Analysis'],
+    description: 'Semi-supervised machine learning solution for network security using entropy estimation and co-clustering techniques.',
+    problem: 'Network security threats with limited labeled data',
+    impact: 'Achieved high detection accuracy with semi-supervised learning',
+    tech: ['Python', 'Machine Learning', 'AI', 'Network Security'],
     icon: Shield,
     featured: true,
     liveUrl: '#',
     sourceUrl: '#',
   },
   {
-    title: 'Django Web Applications',
-    description: 'Multiple full-stack web applications with user authentication, database management, and responsive frontend integration.',
-    problem: 'Building scalable web platforms with robust backend infrastructure',
-    impact: 'Delivered production-ready applications during APSSDC internship',
-    tech: ['Django', 'Python', 'SQL', 'HTML/CSS', 'JavaScript'],
+    title: 'AI Telegram Bot',
+    description: 'Conversational AI bot integrating ChatGPT and Gemini APIs for intelligent automated interactions.',
+    problem: 'Need for intelligent automated customer interactions',
+    impact: 'Built and deployed real-time conversational AI solution',
+    tech: ['Python', 'ChatGPT API', 'Gemini API', 'Telegram Bot API'],
+    icon: Bot,
     featured: true,
     liveUrl: '#',
     sourceUrl: '#',
   },
   {
-    title: 'Responsive UI Components',
-    description: 'Cross-browser compatible component library achieving 95% usability across devices and platforms.',
-    problem: 'Creating consistent user experiences across diverse browsers and devices',
-    impact: '95% usability rate across all major platforms and browsers',
-    tech: ['React.js', 'CSS3', 'Bootstrap', 'Cross-browser Testing'],
+    title: 'Django Web Application',
+    description: 'Full-stack web app with user authentication, database modeling, and dynamic page rendering.',
+    problem: 'Need for scalable and maintainable web solutions',
+    impact: 'Implemented MVC architecture with robust backend',
+    tech: ['Django', 'Python', 'MySQL', 'HTML/CSS', 'JavaScript'],
+    icon: Globe,
     featured: true,
     liveUrl: '#',
     sourceUrl: '#',
