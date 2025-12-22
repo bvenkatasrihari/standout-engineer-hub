@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -51,6 +52,7 @@ export const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <ThemeToggle />
           <Button variant="hero" size="sm" asChild>
             <a href="#contact">Hire Me</a>
           </Button>
@@ -83,11 +85,14 @@ export const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="hero" className="mt-2" asChild>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              Hire Me
-            </a>
-          </Button>
+          <div className="flex items-center gap-4 mt-2">
+            <ThemeToggle />
+            <Button variant="hero" className="flex-1" asChild>
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                Hire Me
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
