@@ -4,22 +4,10 @@ import { AnimateOnScroll, StaggerContainer, StaggerItem } from '@/components/ui/
 
 const certifications = [
   {
-    title: 'Google Cloud Computing',
-    subtitle: 'Google Kubernetes Certificate',
+    title: 'Google Cloud Computing Foundations',
+    subtitle: 'with Kubernetes',
     issuer: 'Google Cloud',
     icon: Cloud,
-  },
-  {
-    title: 'Python for Software Engineering',
-    subtitle: 'Professional Certificate',
-    issuer: 'Coursera',
-    icon: Code,
-  },
-  {
-    title: 'Full Stack Web Development',
-    subtitle: 'Introduction Course',
-    issuer: 'Great Learning',
-    icon: Layers,
   },
 ];
 

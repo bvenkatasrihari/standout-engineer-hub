@@ -46,24 +46,23 @@ export const AboutSection = () => {
           <AnimateOnScroll variant="fadeLeft" delay={0.1}>
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a Frontend Developer with expertise in React.js, JavaScript, and modern 
-                web technologies. Currently pursuing B.Tech in Computer Science at GIET (A), 
-                I blend academic knowledge with practical experience from internships at 
-                AIMERS and APSSDC.
+                I'm a recent Computer Science graduate with a strong foundation in software 
+                development, algorithms, and problem-solving. I've built projects ranging from 
+                Django Web Applications to Semi-Supervised Learning for DDoS Detection.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My approach combines technical proficiency with a keen eye for user experience. 
-                I believe in building applications that aren't just functional, but truly 
-                delightful to use. From cross-browser compatibility to performance optimization, 
-                I ensure every detail is polished.
+                I enjoy turning complex problems into clean, efficient solutions and collaborating 
+                in team environments to bring ideas to life. Seeking opportunities as a Software 
+                Engineer / Full-Stack Developer where I can contribute, grow, and continue 
+                learning cutting-edge technologies.
               </p>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-6">
                 {[
                   { value: '3+', label: 'Projects' },
-                  { value: '2', label: 'Internships' },
-                  { value: '95%', label: 'Usability' },
+                  { value: '3', label: 'Internships' },
+                  { value: '2025', label: 'Graduate' },
                 ].map((stat, index) => (
                   <motion.div
                     key={stat.label}

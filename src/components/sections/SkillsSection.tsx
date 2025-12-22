@@ -4,19 +4,19 @@ import { AnimateOnScroll, StaggerContainer, StaggerItem } from '@/components/ui/
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Responsive Design'],
+    skills: ['React.js', 'Angular', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
   },
   {
     title: 'Languages',
-    skills: ['JavaScript', 'C++', 'Java', 'Python'],
+    skills: ['Java', 'Python', 'JavaScript', 'SQL'],
   },
   {
     title: 'Backend & Database',
-    skills: ['Django', 'SQL', 'REST APIs', 'Node.js Basics'],
+    skills: ['Spring Boot', 'Django', 'Servlets', 'JSP', 'JDBC', 'MySQL', 'PostgreSQL'],
   },
   {
-    title: 'Tools & DevOps',
-    skills: ['Git', 'GitHub', 'VS Code', 'Google Cloud', 'Kubernetes'],
+    title: 'AI & Tools',
+    skills: ['Machine Learning', 'NLP', 'YOLO', 'Power BI', 'Git', 'Docker', 'Kubernetes', 'Google Cloud'],
   },
 ];
 
