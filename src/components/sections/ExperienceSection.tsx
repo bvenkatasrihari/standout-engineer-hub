@@ -40,17 +40,6 @@ const experiences = [
       'Strengthened skills in MVC architecture and API integration',
     ],
   },
-  {
-    type: 'education',
-    title: 'B.Tech in Computer Science',
-    organization: 'GIET College of Engineering',
-    duration: '2021 - 2025',
-    description: 'Computer Science Engineering',
-    achievements: [
-      'Specialization in Computer Science and Engineering',
-      'Project work in ML-based security systems and AI applications',
-    ],
-  },
 ];
 
 export const ExperienceSection = () => {
